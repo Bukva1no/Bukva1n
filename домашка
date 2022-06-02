@@ -1,0 +1,1 @@
+SELECT employees.first_name, employees.last_name, salaries.salary,titles.title FROM employees join salaries ON salaries.emp_no=employees.emp_no JOIN titles ON employees.emp_no = titles.emp_no WHERE first_name like 'c%' AND LENGTH(first_name)>8 LIMIT 30;
