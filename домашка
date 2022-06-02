@@ -1,0 +1,1 @@
+SELECT employees.first_name,salaries.salary,titles.title,departments.dept_name,employees.emp_no FROM employees,salaries,titles,departments WHERE (employees.first_name LIKE 'C%') AND (LENGTH(employees.first_name)>8) and (employees.emp_no=salaries.emp_no) and (employees.emp_no=titles.emp_no);
